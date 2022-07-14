@@ -10,6 +10,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var text = input.value;
         input.value = (text.slice(0, text.length-1));
     }
+
+    function cancelEntry(){
+        var input = document.getElementById('entry');
+        input.value = ''
+    }
+
     
     // Buttons:
 
@@ -35,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var buttonEquals = document.getElementById('equals');
 
     var buttonClear = document.getElementById('clear');
+    var buttonCancelEntry = document.getElementById('cancel-entry')
 
     // Events:
 
@@ -60,4 +67,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     buttonEquals.addEventListener('click', function(){insert('=')});
 
     buttonClear.addEventListener('click', clear);
+    buttonCancelEntry.addEventListener('click', cancelEntry);
 });
