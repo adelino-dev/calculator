@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/calculatorStyle.css">
-    <script type = "text/javascript" src="assets/js/button-numbers-functions.js"></script>
+    <script type = "text/javascript" src="assets/js/button-functions.js"></script>
     <title>Calculadora</title>
 </head>
 <body>
     <section id = "calculator">
         <div>
             <p id="output"></p>
-            <input id="Entrada" type="text">
+            <input id="entry" type="text">
         </div>
 
         <div id = "buttons">
             <div id = "topBlock">
-                <button id = "erase" class = "operator">C</button>
-                <button id = "eraseAll" class = "operator">CE</button>
+                <button id = "clear" class = "operator">C</button>
+                <button id = "cancel-entry" class = "operator">CE</button>
                 <button id = "mrc" class = "operator">MRC</button>
                 <button id = "m-" class = "operator">M-</button>
                 <button id = "m+" class="operator">M+</button>
@@ -47,19 +47,19 @@
                 <div>
                     <button id = "zero" class = "number">0</button>
                     <button id = "doit">.</button>
-                    <button id = "plusOrMinus" class = "operator">+|-</button>
+                    <button id = "plusOrMinus" class = "operator">&plusmn</button>
                 </div>
             </div>
 
             <div id = "rightBlock">
                 <di id = "rb-line1">
                     <button id = "percentage" class = "operator">%</button>
-                    <button id = "radical" class = "operator">√</button>
+                    <button id = "radical" class = "operator">&#8730;</button>
                 </di>
                 
                 <div id ="rb-line2">
                     <button id = "multiplication" class = "operator">x</button>
-                    <button id = "division" class = "operator">÷</button>
+                    <button id = "division" class = "operator">&divide;</button>
                 </div>
                 
                 <div id = "rb-line3">
