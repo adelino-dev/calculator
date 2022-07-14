@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/calculatorStyle.css">
+    <script type = "text/javascript" src="assets/js/button-functions.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <section id = "calculator">
+        <div>
+            <p id="output"></p>
+            <input id="entry" type="text">
+        </div>
+
+        <div id = "buttons">
+            <div id = "topBlock">
+                <button id = "clear" class = "operator">C</button>
+                <button id = "cancel-entry" class = "operator">CE</button>
+                <button id = "mrc" class = "operator">MRC</button>
+                <button id = "m-" class = "operator">M-</button>
+                <button id = "m+" class="operator">M+</button>
+            </div>
+
+            <div id = "leftBlock">
+
+                <div id ="lb-line1">
+                    <button id = "seven" class = "number">7</button>
+                    <button id = "eight" class = "number">8</button>
+                    <button id = "nine" class = "number">9</button>
+                </div>
+                
+                <div id = "lb-line2">
+                    <button id = "four" class = "number">4</button>
+                    <button id = "five" class = "number">5</button>
+                    <button id = "six" class = "number">6</button>
+                </div>
+                
+                <div id = "lb-line3">
+                    <button id = "one" class = "number">1</button>
+                    <button id = "two" class= "number">2</button>
+                    <button id = "three" class = "number">3</button>
+                </div>
+                
+                <div>
+                    <button id = "zero" class = "number">0</button>
+                    <button id = "doit">.</button>
+                    <button id = "plusOrMinus" class = "operator">&plusmn</button>
+                </div>
+            </div>
+
+            <div id = "rightBlock">
+                <di id = "rb-line1">
+                    <button id = "percentage" class = "operator">%</button>
+                    <button id = "radical" class = "operator">&#8730;</button>
+                </di>
+                
+                <div id ="rb-line2">
+                    <button id = "multiplication" class = "operator">x</button>
+                    <button id = "division" class = "operator">&divide;</button>
+                </div>
+                
+                <div id = "rb-line3">
+                    <button id = "addition" class = "operator">+</button>
+                    
+                    <div id ="rb-line3-row2">
+                        <button id = "subtraction" class = "operator">-</button>
+                        <button id = "equals" class ="operator">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
