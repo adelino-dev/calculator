@@ -1,10 +1,18 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
     function insert(number){
-        var input = document.getElementById('entry')
-        input.value = input.value + number
+        var input = document.getElementById('entry');
+        input.value = input.value + number;
+    }
+
+    function clear(){
+        var input = document.getElementById('entry');
+        var text = input.value;
+        input.value = (text.slice(0, text.length-1));
     }
     
+    // Buttons:
+
     var button1 = document.getElementById('one');
     var button2 = document.getElementById('two');
     var button3 = document.getElementById('three');
@@ -26,7 +34,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var buttonSubtraction = document.getElementById('subtraction');
     var buttonEquals = document.getElementById('equals');
 
-    
+    var buttonClear = document.getElementById('clear');
+
+    // Events:
+
     button1.addEventListener('click', function(){insert('1')});
     button2.addEventListener('click', function(){insert('2')});
     button3.addEventListener('click', function(){insert('3')});
@@ -48,5 +59,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     buttonSubtraction.addEventListener('click', function(){insert('-')});
     buttonEquals.addEventListener('click', function(){insert('=')});
 
-
+    buttonClear.addEventListener('click', clear);
 });
